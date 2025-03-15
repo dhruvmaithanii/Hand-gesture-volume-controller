@@ -1,2 +1,15 @@
 # Hand-gesture-volume-controller
-The aim of this project is to develop a system that allows users to control the volume of their computer or any connected device using hand gestures. This is achieved by tracking hand movements through a webcam and mapping specific gestures to volume levels.
+This project uses hand tracking to control system volume via thumb-index finger distance using a webcam. The system detects hand gestures in real-time and adjusts the volume accordingly.
+
+Libraries Used:
+OpenCV – Captures video from the webcam and processes images.
+MediaPipe – Tracks hand landmarks for detecting gestures.
+NumPy – Used for mathematical operations and interpolation.
+PyCaw – Controls system volume programmatically.
+Math – Calculates the distance between fingers.
+Working Principle:
+The webcam captures hand movements.
+MediaPipe detects key landmarks on the hand.
+The distance between the thumb and index finger determines volume level.
+PyCaw adjusts the system volume accordingly.
+A real-time volume bar is displayed
